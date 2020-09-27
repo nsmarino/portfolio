@@ -1,40 +1,118 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 
-const Nav = () => (
-  <nav
-    style={{
-      position: "fixed",
-      top: 0,
-      left: 0,
-      width: "100%",
-      zIndex: "999",
-      background: "lightgray"
-    }}
-  >
-    <ul
-      style={{
-        display: "flex",
-        alignItems: "center",
-        width: "100%",
-        listStyle: "none",
-        margin: "0 auto",
-        padding: "0 1em",
-        height: "50px",
-        maxWidth: 960
-      }}
-    >
-      <li style={{ marginRight: "auto" }}>
-        <Link to="/">Home</Link>
-      </li>
-      <li style={{ marginRight: "1em" }}>
-        <Link to="/regular/">Regular</Link>
-      </li>
+import styled from 'styled-components' 
+
+const StyledNav = styled.nav`
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    display: block;
+    font-family: Serif;
+    font-size: 300%;
+  }
+
+  p {
+    font-style: italic;
+  }
+ .subHeader {
+    cursor: pointer;
+    transition: color 700ms;
+    text-decoration: underline;
+  }
+
+  .subHeader:hover {
+    color: blue;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 125%;
+  }
+
+  li {
+    transition: color 700ms;
+  }
+
+  li::first-letter {
+    border-bottom: 1px solid grey;
+  }
+  li:hover {
+    color: red;
+  }
+
+  .disabled {
+    color: grey;
+  }
+
+  .disabled:hover {
+    color: grey;
+  }
+  .pdf {
+    font-variant: small-caps;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media only screen and (min-width: 700px) {
+    justify-content: left;
+    margin-top: 4rem;
+    h1 {
+      font-size: 600%;
+    }
+    p {
+      font-size: 300%;
+    }
+
+    ul {
+      font-size: 200%;
+    }
+  }
+`
+
+const Nav = () => {
+  const [emailVis, setEmailVis] = useState(false)
+  return (
+  <StyledNav>
+    <div>
+  <h1>Nicholas Marino</h1>
+  {
+    emailVis ?
+    <p>nsmarino0@gmail.com <svg onClick={() => setEmailVis(!emailVis)} opacity="0.8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></p>
+    :
+    <p className="subHeader" onClick={() => setEmailVis(!emailVis)}>Send me an email</p>
+  }
+
+  <ul>
+    <Link to="/recent-work" style={{textDecoration: 'none', color: 'inherit'}}>
+      <li>Recent Work</li>
+    </Link>
+      <Link to="/experiment-zone" style={{textDecoration: 'none', color: 'inherit'}}>
       <li>
-        <Link to="/animated/">Animated</Link>
+        Experiment Zone
       </li>
+      </Link>
+      <Link to="/about" style={{textDecoration: 'none', color: 'inherit'}}>
+      <li>
+        About Me
+      </li>
+      </Link>
+      <a href="resume.pdf">
+      <li>
+        CV <span className="pdf">[pdf]</span>
+      </li>
+      </a>
     </ul>
-  </nav>
-);
+    </div>
+  </StyledNav>
+)};
 
 export default Nav;
