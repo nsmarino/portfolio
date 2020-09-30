@@ -9,7 +9,7 @@ const projectData = [
         role: 'Development / co-designed with William Graham Rice',
         url: 'megalith.supply',
         github: 'github.com',
-        concept: 'E-commerce site for streetwear brand. Users should feel that they have entered into an ancient and mysterious zone. Care was taken to create an immersive environment using SVG animations and Framer Motion.',
+        concept: 'E-commerce site for streetwear brand. Users should feel that they have entered into an ancient and mysterious zone.',
         stack: 'Gatsby frontend connected to Express/Apollo Server backend. Custom integration with Stripe API for payment processing and Printful API for dropshipping.',
         id: 1,
     },
