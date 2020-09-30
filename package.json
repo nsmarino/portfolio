@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-using-page-transitions",
-  "description": "Gatsby example site using page transitions",
+  "name": "nicholas-marino",
+  "description": "Nicholas Marino Web Developer Portfolio",
   "version": "1.0.1",
-  "author": "Ryan Wiemer <https://www.ryanwiemer.com>",
+  "author": "Nicholas Marino <https://www.nmarino.dev>",
   "dependencies": {
     "framer-motion": "^2.6.13",
     "gatsby": "^2.24.57",
