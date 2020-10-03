@@ -24,8 +24,8 @@ const AboutPage = () => {
         <li>react ecosystem</li>
         <li>nodeJS/express</li>
         <li>graphQL/apollo server</li>
+        <li>mongoDB</li>
         <li>stripe</li>
-        <li>authentication with JSON web token</li>
         <li>testing with cypress and jest</li>
         <li>p5js and react-three-fiber</li>
         <li>css!</li>
