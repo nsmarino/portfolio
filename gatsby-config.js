@@ -1,5 +1,11 @@
 module.exports = {
+  siteMetadata: {
+    title: `nicholas-marino`,
+    description: `Portfolio Web Site of web developer nicholas marino`,
+    author: `nicholas marino`,
+  },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
     {

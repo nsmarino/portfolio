@@ -4,16 +4,19 @@
   "version": "1.0.1",
   "author": "Nicholas Marino <https://www.nmarino.dev>",
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
     "babel-plugin-styled-components": "^1.11.1",
     "framer-motion": "^2.6.13",
     "gatsby": "^2.24.57",
     "gatsby-image": "^2.4.19",
+    "gatsby-plugin-react-helmet": "^3.3.12",
     "gatsby-plugin-sharp": "^2.6.36",
     "gatsby-plugin-styled-components": "^3.3.12",
     "gatsby-source-filesystem": "^2.3.30",
     "gatsby-transformer-sharp": "^2.5.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
     "styled-components": "^5.2.0"
   },
   "keywords": [

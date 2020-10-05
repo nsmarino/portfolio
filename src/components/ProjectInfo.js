@@ -51,7 +51,7 @@ const ProjectInfo = ({ info }) => {
       <p>{info.role}</p>
       <div className="links">
         <div>
-          <a href={`${info.url}`}>{info.url}</a>
+          <a href={`${info.url}`}>{info.site}</a>
         </div>
         <div>
           <a href={`${info.github}`}>github</a>

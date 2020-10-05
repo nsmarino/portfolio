@@ -1,4 +1,5 @@
 import React from 'react'
+import SEO from '../components/seo'
 import styled from 'styled-components'
 
 const TextContainer = styled.div`
@@ -16,6 +17,7 @@ const AboutPage = () => {
         justifyContent: 'center',
       }}
     >
+      <SEO title="who i am" />
       <TextContainer>
       <h1 style={{fontFamily: 'Serif', fontSize: '300%'}}>About Me</h1>
       <p>I am a full-stack web developer based in New York City. I strive to write code that is reliable, legible and extensible. On the design side, I seek to make my sites interesting to look at and pleasant to use.</p>

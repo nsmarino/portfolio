@@ -18,11 +18,20 @@ const StyledNav = styled.nav`
 
   p {
     font-style: italic;
+    font-size: 125%;
   }
  .subHeader {
     cursor: pointer;
     transition: color 700ms;
     text-decoration: underline;
+    color: hsla(0, 0%, 0%, 0.8);
+    font-size: 125%;
+    font-style: italic;
+    margin:0;
+    padding:0;
+    margin-bottom: 1.5rem;
+    border: none;
+    background: none;
   }
 
   .subHeader:hover {
@@ -68,7 +77,7 @@ const StyledNav = styled.nav`
     h1 {
       font-size: 600%;
     }
-    p {
+    .subHeader, p {
       font-size: 300%;
     }
 
@@ -88,7 +97,7 @@ const Nav = () => {
     emailVis ?
     <p>contact@nmarino.dev <svg style={{cursor: 'pointer'}}onClick={() => setEmailVis(!emailVis)} opacity="0.8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg></p>
     :
-    <p className="subHeader" onClick={() => setEmailVis(!emailVis)}>Send me an email</p>
+    <button className="subHeader" onClick={() => setEmailVis(!emailVis)} onKeyDown={() => setEmailVis(!emailVis)}>Send me an email</button>
   }
 
   <ul>

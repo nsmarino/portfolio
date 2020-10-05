@@ -5,7 +5,7 @@ import Experiment from './Experiment'
 const experimentInfo = [
   {
     url: 'https://codepen.io/nsmarino/pen/MWYGjYo',
-    id: 1
+    id: '1'
   }
 ]
 
@@ -33,7 +33,7 @@ export default () => (
       image => (
           {
           image, 
-          info: experimentInfo.find(experiment => image.node.base.split('.')[0] == experiment.id)
+          info: experimentInfo.find(experiment => image.node.base.split('.')[0] === experiment.id)
         }
       )    
     )

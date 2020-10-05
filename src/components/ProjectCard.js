@@ -2,15 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 import ProjectInfo from './ProjectInfo'
-import Slides from './Slides'
+import Slideshow from './Slideshow'
 
 const ProjectContainer = styled.section`
   display: flex;
-  height: 75vh;
-  @media only screen and (max-width: 800px) {
-      flex-direction: column-reverse;
-      height: unset;
-      
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+  @media only screen and (max-width: 900px) {
+      flex-direction: column-reverse;      
   }
 
 `
@@ -18,8 +17,8 @@ const ProjectContainer = styled.section`
 const ProjectCard = ({ project }) => {
     return (
         <ProjectContainer>
-          <ProjectInfo info={project.info} />
-          <Slides img={project.image} />
+          <ProjectInfo info={project} />
+          <Slideshow project={project.images} />
         </ProjectContainer>
     )
 }
