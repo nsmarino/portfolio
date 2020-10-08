@@ -6,6 +6,10 @@ const experimentInfo = [
   {
     url: 'https://codepen.io/nsmarino/pen/MWYGjYo',
     id: '1'
+  },
+  {
+    url: 'https://editor.p5js.org/nsmarino/sketches/yVnYcTcWt',
+    id: '2'
   }
 ]
 
