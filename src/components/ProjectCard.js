@@ -11,7 +11,7 @@ const ProjectContainer = styled.section`
   @media only screen and (max-width: 900px) {
       margin-bottom: 0rem;
       margin-top: 0rem;
-      flex-direction: column;    
+      flex-direction: column-reverse;    
   }
 
 `
@@ -20,7 +20,7 @@ const ProjectCard = ({ project }) => {
     return (
         <ProjectContainer>
           <ProjectInfo info={project} />
-          <Slideshow project={project.images} />
+          {/* <Slideshow project={project.images} /> */}
         </ProjectContainer>
     )
 }
