@@ -13,7 +13,6 @@ const ProjectContainer = styled.section`
       margin-top: 0rem;
       flex-direction: column-reverse;    
   }
-
 `
 
 const ProjectCard = ({ project }) => {

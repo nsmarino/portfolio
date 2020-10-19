@@ -40,7 +40,9 @@ const projectData = [
 const RecentWorkPage = () => (
   <>
     <SEO title="recent-work" />
-    {projectData.map(project => <ProjectCard project={project} key={project.id} />)}
+    <div style={{display: 'flex', flexDirection: 'column'}}>
+      {projectData.map(project => <ProjectCard project={project} key={project.id} />)}
+    </div>
   </>
 );
 
