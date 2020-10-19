@@ -81,13 +81,13 @@ const Slideshow = ({ project }) => {
           className={styles.prev} 
           onClick={() => paginate(-1)} 
           onKeyDown={() => paginate(-1)}
-        >🢔</button>
+        >prv</button>
 
         <button 
           className={styles.next} 
           onClick={() => paginate(1)} 
           onKeyDown={() => paginate(1)}
-        >🢖</button>
+        >nxt</button>
       </div>
     </div>
 
