@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
     return (
         <ProjectContainer>
           <ProjectInfo info={project} />
-          {/* <Slideshow project={project.images} /> */}
+          <Slideshow project={project.images} />
         </ProjectContainer>
     )
 }
