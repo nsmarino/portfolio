@@ -9,9 +9,9 @@ const ProjectContainer = styled.section`
   margin-bottom: 10rem;
   margin-top: 10rem;
   @media only screen and (max-width: 900px) {
-      flex-direction: column-reverse;
       margin-bottom: 0rem;
-      margin-top: 0rem;    
+      margin-top: 0rem;
+      flex-direction: column;    
   }
 
 `

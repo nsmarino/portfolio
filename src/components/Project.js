@@ -6,7 +6,6 @@ import Slides from './Slides'
 
 const ProjectContainer = styled.section`
   display: flex;
-  height: 75vh;
   @media only screen and (max-width: 800px) {
       flex-direction: column-reverse;
       height: unset;
