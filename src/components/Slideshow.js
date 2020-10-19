@@ -32,8 +32,8 @@ const variants = {
 
 const Slideshow = ({ project }) => {
   const images = [
-    `/${project}/3.jpg`,
-    `/${project}/3.jpg`,
+    `/${project}/1.jpg`,
+    `/${project}/2.jpg`,
     `/${project}/3.jpg`,
   ]
     const [[page, direction], setPage] = useState([0, 0]);

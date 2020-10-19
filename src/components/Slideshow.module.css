@@ -25,6 +25,8 @@
 .prev {
   background: none;
   color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #666;
   border: none;
   font-size: 500%;
   height: 100%;
@@ -41,6 +43,9 @@
 
 .next:hover, .prev:hover {
   color: red;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: red;
+
 }
 
 .image {
