@@ -28,7 +28,7 @@ const projectData = [
   {
       name: 'studies.film',
       role: 'Design/Development',
-      url: 'https://www.studiesfilm.vercel.app',
+      url: 'https://studiesfilm.vercel.app',
       site: 'studiesfilm.vercel.app',
       github: 'https://github.com/nsmarino/institute',
       concept: 'Film blog designed to be readable and pleasant to navigate on both desktop and mobile. Site is organized around film as a linear experience; users can navigate through long essays using a timeline similar to Netflix or other streaming sites.',
